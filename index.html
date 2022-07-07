@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <div class="left">
+        <article class="input">
+          <section class="input_section">
+            <h2>Enter New Book To Read</h2>
+            <form id="inputBook">
+              <div class="input">
+                <label for="inputBookTitle">Title</label>
+                <input id="inputBookTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookAuthor">Author</label>
+                <input id="inputBookAuthor" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookYear">Year</label>
+                <input
+                  id="inputBookYear"
+                  type="number"
+                  min="1990"
+                  max="2099"
+                  step="1"
+                  required
+                />
+              </div>
+              <button id="bookSubmit" type="submit">
+                Add Unread Book To <span>Book Shelf</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+
+      <div class="right">
+        <article class="search">
+          <section class="search_section">
+            <h2>Search Book Title</h2>
+            <form id="searchBook">
+              <input id="searchBookTitle" type="text" placeholder="Search..." />
+              <button id="searchSubmit" type="submit">Search</button>
+            </form>
+          </section>
+        </article>
+
+        <article class="books">
+          <section class="book_shelf">
+            <h2>Unfinished Book To Read</h2>
+
+            <div id="uncompletedBookShelfLists" class="book_list">
+              <!-- <div id="book-1656925205851">
+            <div class="book_item">
+              <h3>Rahasia Mamank</h3>
+              <p>Mamank Racing</p>
+              <p>2022</p>
+            </div>
+            <button class="check-button">Finished Reading</button
+            ><button class="delete-button">Delete Book</button>
+          </div> -->
+            </div>
+          </section>
+          <section class="book_shelf">
+            <h2>Finished Book To Read</h2>
+
+            <div id="completedBookShelfLists" class="book_list">
+              <!-- <div id="book-1656942798958">
+            <div class="book_item">
+              <h3>Apaan tuh?</h3>
+              <p>Jaja Raharja</p>
+              <p>2012</p>
+            </div>
+            <button class="undo-button">Unfinished Reading</button
+            ><button class="delete-button">Delete Book</button>
+          </div> -->
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="foot_bar">
+      <h5>
+        &copy;Copyright By
+        <a href="https://github.com/Fal-hi">Syaifal Illahi</a>
+      </h5>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
